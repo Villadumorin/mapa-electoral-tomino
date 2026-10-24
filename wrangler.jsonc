@@ -1,9 +1,9 @@
-// Cloudflare (Workers con ficheiros estáticos): publica o cartafol site/ tal cal, sen compilar nada.
+// Cloudflare (Workers con ficheiros estáticos): publica o cartafol docs/ tal cal, sen compilar nada.
 {
   "name": "mapa-electoral-tomino",
   "compatibility_date": "2025-09-01",
   "assets": {
-    "directory": "./site",
+    "directory": "./docs",
     "html_handling": "auto-trailing-slash"
   }
 }
