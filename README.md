@@ -2,8 +2,12 @@
 
 Mapa interactivo dos resultados electorais de Tomiño por mesa e parroquia: municipais (1979–2023), autonómicas (1985–2024) e xerais (1977–2023). Pódese ver por bloques (esquerda e dereita) ou por partidos, con cores planas ou degradado pola marxe.
 
-Abre `index.html` nun navegador: é unha páxina autónoma, cos datos dentro. Os datos tamén están en `tomino.json`.
+A web está en `site/index.html`: é unha páxina autónoma, cos datos dentro (tamén en `site/tomino.json`).
 En `datos-curiosos.md` hai unha lista de datos curiosos sacados destes resultados.
+
+## Publicación
+Publícase en Cloudflare como Worker con ficheiros estáticos (`wrangler.jsonc` sube o cartafol `site/` tal cal).
+Proxecto de Cloudflare: `mapa-electoral-tomino` (ten que coincidir co `name` de `wrangler.jsonc`); comando de compilación baleiro e despregamento `npx wrangler deploy`. Cada cambio que se suba a GitHub publícase só.
 
 ## Fontes
 - **Resultados por mesa:** Ministerio do Interior, [infoelectoral](https://infoelectoral.interior.gob.es/es/elecciones-celebradas/area-de-descargas/) (xerais desde 1982 e municipais desde 1987) e Xunta de Galicia, [abertos.xunta.gal](https://abertos.xunta.gal/) (autonómicas desde 2005).
